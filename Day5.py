@@ -33,8 +33,5 @@ for line in lines:
         seats.remove(int(id))
 
 print(max)
-print(seats)
-
-#part 2
-        
+print(seats)      
 file.close()
