@@ -16,8 +16,8 @@ for line in lines:
 
 dicts.append(temp_dict)
 allowedHcl = "0123456789abcdef"
-allowedEcl=["amb","blu","brn","gry","grn","hzl","oth"]
-allowedPid ="0123456789"
+allowedEcl= ["amb","blu","brn","gry","grn","hzl","oth"]
+allowedPid = "0123456789"
 
 count = 0
 for entry in dicts:
