@@ -8,25 +8,21 @@ def intersection(lst1, lst2):
 
 letters_sets =[] 
 count = 0
-group = 0
+group = 0 # Only for debugging purposes
 for line in lines:
     if line.strip() == "":
         letters = letters_sets[0]
-        for person in letters_sets:
-            letters = intersection(letters, person)
+        for person in letters_sets: letters = intersection(letters, person)
         count += len(letters)
         print(str(len(letters)) + " for group " +str(group))
         group +=1
         letters_sets = []
     else:
-        letters = []
-        for c in line.strip():
-            letters.append(c)
+        letters = [letter for letter in line.strip()]
         letters_sets.append(letters)
 
 letters = letters_sets[0]
-for person in letters_sets:
-    letters = intersection(letters, person)
+for person in letters_sets: letters = intersection(letters, person)
 count += len(letters)
 print(str(len(letters)) + " for group " +str(group))
 group +=1
