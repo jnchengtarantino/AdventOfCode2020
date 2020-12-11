@@ -15,12 +15,13 @@ data.sort()
 #     elif data[i] - data[i-1] == 3: dif3 += 1
 
 temp = [1]+[0]*data[-1]
-print(temp)
+print(data[-1])
 for i in data[1:]: 
     temp[i] = temp[i-3] + temp[i-2] + temp[i-1]
     print()
     print(temp)
 print(str(temp[-1]))
+
 # print(str(dif1) + " 1 jolt * " + str(dif3) + " 3 jolt = " + str(dif1*dif3))
    
 file.close()
