@@ -9,7 +9,6 @@ prev = nums[-1]
 i = len(nums) + 1
 while(i < 30000000 + 1):
     new = None
-    # if 
     if prev in d:
         new = i - d[prev] - 1
     else:
