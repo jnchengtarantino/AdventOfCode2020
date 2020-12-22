@@ -3,9 +3,7 @@ def round(deck1, deck2):
     p1 = deck1.pop(0)
     p2 = deck2.pop(0)
     if p1 <= len(deck1) and p2 <= len(deck2):
-        print('recurse')
         r1,r2 = game([*deck1[:p1]], [*deck2[:p2]])
-        print('done')
         if r1 == []:
             deck2.append(p2)
             deck2.append(p1)
